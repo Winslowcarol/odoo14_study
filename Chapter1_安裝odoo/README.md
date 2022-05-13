@@ -63,12 +63,14 @@ terminal執行`python odoo-bin`
 因為前輩都用pycharm，我就安裝pycharm了。
 
 ### (1)按照[PyCharm](https://www.jetbrains.com/pycharm/)官網安裝即可。
-### (2)打開PyCharm, 會請你先建立project（my-addon)，
-到Preference設定環境，我們要開發odoo的是python3.7(odoo14env)，前幾個步驟架設好的環境。
+### (2)打開PyCharm, 會請你先建立project（我設定my-addon)，
+到Preference設定**環境**，我們要開發odoo的是python3.7(odoo14env)，前幾個步驟架設好的環境。
 <img width="443" alt="截圖 2022-05-13 下午5 23 20" src="https://user-images.githubusercontent.com/77597518/168253811-1715ebeb-697e-490d-8ecd-4161458d39ee.png">
-到Preference設定目錄
 
-### (3) 
-
-Set up new file (package)
+到Preference設定**目錄Root**
+<img width="296" alt="截圖 2022-05-13 下午5 23 31" src="https://user-images.githubusercontent.com/77597518/168306430-22c3e6c3-0524-46a4-81ff-8cb5aeb5482b.png">
+### (3)下一步就可以開始進行增加addon開始odoo旅程～～接下一章
+## 小技巧
+(1)有時候在terminal跑失敗無法跳出，快捷鍵是 `control` + `C` (cancel)
+(2)python程式碼我們常常要用`#`註解關掉某些行，可以使用快捷鍵 `command` + `/`，也可以把要註解的整個段落一起用滑鼠匡起來加快捷鍵使用。
 
