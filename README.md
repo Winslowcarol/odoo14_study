@@ -7,7 +7,9 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 
 
 ## 架構-24章節
+
 本書分成24章節，依照章節開始進入odoo
+
 **Chapter 1** 
 安裝odoo
 
