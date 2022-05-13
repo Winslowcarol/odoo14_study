@@ -8,13 +8,21 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 
 ## 架構-24章節
 本書分成24章節，依照章節開始進入odoo
-**Chapter 1** 安裝odoo
-**Chapter 2** 管理odoo服務端
-**Chapter 3** 創建新的addon(模組)
-**Chapter 4** 應用模型
+**Chapter 1** 
+安裝odoo
+**Chapter 2** 
+管理odoo服務端
+**Chapter 3** 
+創建新的addon(模組)
+**Chapter 4** 
+應用模型
+
 **Chapter 5** 
+
 **Chapter 6**
+
 **Chapter 7**
+
 **Chapter 8**
 
 ...未完待續
