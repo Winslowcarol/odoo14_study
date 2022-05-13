@@ -72,7 +72,9 @@ terminal執行`python odoo-bin`
 
 <img width="296" alt="截圖 2022-05-13 下午5 23 31" src="https://user-images.githubusercontent.com/77597518/168306430-22c3e6c3-0524-46a4-81ff-8cb5aeb5482b.png">
 ### (3)下一步就可以開始進行增加addon開始odoo旅程～～接下一章
+
 ## 小技巧
+
 (1)有時候在terminal跑失敗無法跳出，快捷鍵是 `control` + `C` (cancel)
 
 (2)python程式碼我們常常要用`#`註解關掉某些行，可以使用快捷鍵 `command` + `/`，也可以把要註解的整個段落一起用滑鼠匡起來加快捷鍵使用。
