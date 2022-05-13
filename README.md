@@ -1,10 +1,23 @@
 # odoo14_study
 It's a project for learning of odoo14, for chiefs to check the daily detail and process of learning. 
 
-Odoo 14 Development Cookbook - Fourth Edition
+藉由[Odoo 14 Development Cookbook - Fourth Edition](https://www.packtpub.com/product/odoo-14-development-cookbook-fourth-edition/9781800200319?utm_source=github&utm_medium=repository&utm_campaign=9781800200319)學習odoo14開發。
 由Packt發行的一系列odoo開發程式碼，可以快速應用在開發odoo上。
-[原始碼](https://www.packtpub.com/product/odoo-14-development-cookbook-fourth-edition/9781800200319?utm_source=github&utm_medium=repository&utm_campaign=9781800200319)
 [購買](https://www.amazon.com/dp/1800200315)
+
+
+## 架構-24章節
+本書分成24章節，依照章節開始進入odoo
+**Chapter 1** 安裝odoo
+**Chapter 2** 管理odoo服務端
+**Chapter 3** 創建新的addon(模組)
+**Chapter 4** 應用模型
+**Chapter 5** 
+**Chapter 6**
+**Chapter 7**
+**Chapter 8**
+
+...未完待續
 
 ## Get to Know the Author
 **Parth Gajjar**
