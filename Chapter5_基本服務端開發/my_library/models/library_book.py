@@ -26,7 +26,7 @@ class LibraryBook(models.Model):
         'State', default="draft")
     manager_remarks = fields.Text('Manager Remarks') #繼承write()和create()
 
-    def name_get(self):#繼承write()和create()
+    def name_get(self):#自定義記錄的搜索方式
         result = []
         for book in self:
             authors = book.author_ids.mapped('name')
