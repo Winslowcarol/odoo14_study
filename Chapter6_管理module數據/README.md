@@ -56,8 +56,7 @@
   
   **1)noupdate**：遇到模組更新時，會把更新前舊有的紀錄再寫到更新後模組裡(沒有要被刪掉的意思）。設定在xml檔中的`<odoo noupdate="1">`
   
-  **2)forcecreate**：舊有的紀錄沒有要寫進去更新後的模組(就是要更新覆蓋的意思）。所以在模型後加入此指令：
-	`<record id="book_category_all" model="library.book.category" forcecreate="False">`
+  **2)forcecreate**：舊有的紀錄沒有要寫進去更新後的模組(就是要更新覆蓋的意思）。所以在模型後加入此指令：`forcecreate="False"`
   ## 開始
   ### Step1:noupdate，在data.xml裡頭修改：
   ```
