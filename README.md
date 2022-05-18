@@ -23,12 +23,27 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 應用模型
 
 **Chapter 5** 
+基本服務端開發
 
 **Chapter 6**
+管理模組(module)數據
 
 **Chapter 7**
+調適模組(module)
 
 **Chapter 8**
+
+**Chapter 9**
+
+**Chapter 10**
+
+**Chapter 11**
+
+**Chapter 12**
+
+**Chapter 13**
+
+**Chapter 14**
 
 ...未完待續
 
