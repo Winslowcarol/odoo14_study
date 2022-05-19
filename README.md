@@ -23,7 +23,7 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 應用模型
 
 **Chapter 5** 
-基本服務端開發
+基本服務端開發 Basic Server-Side Development
 
 **Chapter 6**
 管理模組(module)數據
