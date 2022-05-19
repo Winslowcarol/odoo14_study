@@ -11,46 +11,46 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 本書分成24章節，依照章節開始進入odoo
 
 **Chapter 1** 
-安裝odoo Installing the Odoo Development Environment
+安裝odoo *Installing the Odoo Development Environment*
 
 **Chapter 2** 
-管理odoo服務端 Managing Odoo Server Instances
+管理odoo服務端 *Managing Odoo Server Instances*
 
 **Chapter 3** 
-創建新的add-on(模組) Creating Odoo Add-On Modules
+創建新的add-on(模組) *Creating Odoo Add-On Modules*
 
 **Chapter 4** 
-應用模型 Application Models
+應用模型 *Application Models*
 
 **Chapter 5** 
-基礎服務端開發 Basic Server-Side Development
+基礎服務端開發 *Basic Server-Side Development*
 
 **Chapter 6**
-管理模組數據 Managing Module Data
+管理模組數據 *Managing Module Data*
 
 **Chapter 7**
-調適模組 Debugging Modules
+調適模組 *Debugging Modules*
 
 **Chapter 8**
-進階服務端開發技術 Advnace Sever-Side Development Techniques
+進階服務端開發技術 *Advnace Sever-Side Development Techniques*
 
 **Chapter 9**
- Backend Views
+ *Backend Views*
  
 **Chapter 10**
-Security Access
+*Security Access*
 
 **Chapter 11**
-Internationalization
+*Internationalization*
 
 **Chapter 12**
-Automation
+*Automation*
 
 **Chapter 13**
-Web Server Development
+*Web Server Development*
 
 **Chapter 14**
-CMS Website Development
+*CMS Website Development*
 
 ...未完待續
 
