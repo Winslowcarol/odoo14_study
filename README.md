@@ -14,7 +14,7 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 安裝odoo
 
 **Chapter 2** 
-管理odoo服務端
+管理odoo服務端 Managing Odoo Server Instances
 
 **Chapter 3** 
 創建新的addon(模組)
@@ -29,7 +29,7 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 管理模組(module)數據
 
 **Chapter 7**
-調適模組(module)
+調適模組 Debugging Modules
 
 **Chapter 8**
 
