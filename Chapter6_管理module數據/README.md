@@ -1,5 +1,5 @@
 開始本章節之前，請先卸載及刪除上一章節的my_library，並使用chapter4-06_hierarchy_model的script開始。
-本章中，從XML出發的odoo～～，透過修改XML中程式碼學習如何添加、刪改數據到module。分成以下單元：
+本章中，從XML出發的odoo～，透過修改XML中程式碼學習如何添加、刪改數據到module。分成以下單元：
 
 **1.使用外部ID和命名空間 external identifier**
 
@@ -134,11 +134,11 @@
   
 	1) 刪除之前在XML文件創出的紀錄
 	新建標籤：ID，寫在XML中
-	`<delete model="library.book.category" id="book_category_to_delete"/>`
+	<delete model="library.book.category" id="book_category_to_delete"/>
 	
 	2) 不是在XML文件創出的紀錄（是odoo系統寫入的）
 	使用search domain當成標籤
-        `<delete model="library.book.category" search="[('name', 'ilike', 'Test')]"/>`
+        <delete model="library.book.category" search="[('name', 'ilike', 'Test')]"/>
   ## 開始
   ### Step1:在`data.xml`模擬創兩筆資料，等等拿來刪掉：
   ```
@@ -161,7 +161,25 @@
   
 # 7.在XML文件中調用函數 invoke_method_from_xml
   ## 前言
+  開始前提醒，在前面設定的noupdate記得關掉(**本節中如想反復測試，請先將 noupdate 刪除或置為0**)。
+  這邊要從XML當中把model裡的函式叫出來使用。名為invoke就是呼喚、激起之意。這邊要設定兩個識別的標籤的屬性，如下：
+  	1)model：在其中聲明函式的model名稱
+	2)name：想要調用的函式名稱
+  以下以價格增加為例，做示範。
   ## 開始
-  ### Step1:
-  ### Step2:
-  ### Step3:
+  ### Step1:在library.book模型中添加_update_book_price()函式：
+  ```
+  @api.model
+  def _update_book_price(self):
+    all_books = self.search([])
+    for book in all_books:
+      book.cost_price += 10
+  ```
+  我們把價格都增加了$10了
+  ### Step2:在`data.xml`XML文件中添加invoke指令
+  ```
+  <function model="library.book" name="_update_book_price"/>
+  ```
+  你會發現就是html的`<function>`，就是呼叫函式之意。
+  ### Step3:升級模組前後紀錄。
+  升級模組前，先確認每本書的價格，升級後你就會發現被加價了！！
