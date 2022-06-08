@@ -29,16 +29,16 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 管理模組數據 *Managing Module Data*
 
 **Chapter 7**
-調適模組 *Debugging Modules*
+除錯模組 *Debugging Modules*
 
 **Chapter 8**
 進階服務端開發技術 *Advnace Sever-Side Development Techniques*
 
 **Chapter 9**
- *Backend Views*
+後端視圖 *Backend Views*
  
 **Chapter 10**
-*Security Access*
+安全性與權限(訪問權) *Security Access*
 
 **Chapter 11**
 *Internationalization*
@@ -52,7 +52,35 @@ It's a project for learning of odoo14, for chiefs to check the daily detail and 
 **Chapter 14**
 *CMS Website Development*
 
-...未完待續
+**Chapter 15**
+ *Web Client Development*
+ 
+**Chapter 16**
+*The Odoo Web Library (OWL)*
+ 
+**Chapter 17** 
+*In-App Purchasing with Odoo*
+
+**Chapter 18**
+*Automated Test Cases*
+
+**Chapter 19**
+*Managing, Deploying, and Testing with Odoo.sh*
+
+**Chapter 20**
+*Remote Procedure Calls in Odoo*
+
+**Chapter 21**
+*Performance Optimization*
+
+**Chapter 22**
+*Point of Sale*
+
+**Chapter 23**
+*Managing Emails in Odoo*
+
+**Chapter 24**
+*Managing IoT Box*
 
 ## Get to Know the Author
 **Parth Gajjar**
