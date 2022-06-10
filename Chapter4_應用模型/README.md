@@ -10,15 +10,15 @@
 		
 以下第3~5節，說明資料型態，這邊統整分三類：
     
-○ 基礎類型：Char, Text, Boolean, Integer, Float, Date, Datetime, Binary
-	- 日後搜尋：Text效能差，Char效能好
-	- 計算時：Float（記得宣告digit）會比起 Integer精準
-	- 日期與日期時間應用不同，使用前自行判斷定義	
-	- Binary: 物件型態，store binary files, such as images or documents.
+- 基礎類型：Char, Text, Boolean, Integer, Float, Date, Datetime, Binary
+* 日後搜尋：Text效能差，Char效能好
+* 計算時：Float（記得宣告digit）會比起 Integer精準
+* 日期與日期時間應用不同，使用前自行判斷定義	
+* Binary: 物件型態，store binary files, such as images or documents.
       
-○ 複雜類型：Function, Selection
+- 複雜類型：Function, Selection
     
-○ 關係類型：Many2one, One2many, Many2many
+- 關係類型：Many2one, One2many, Many2many
   
 #### 3.使用可配置精度的浮點字段 decimal precision 
     Float
