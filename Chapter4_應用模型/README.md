@@ -21,10 +21,10 @@
 ○ 關係類型：Many2one, One2many, Many2many
 
 field中參數：
-* 1. 'string="欄位名稱"'
-* 2. 'required=True'  是否必填項目
-* 3. 'fields.Selection([('1', '必修'), ('2', '選修')], string="課程型態", required=True)'  選項以tuple()裝在list[]中。
-* 4. 'default='填預設值'' 預設值，像是選項代號、呼叫今日時間給予時間選項。
+* 1. `string="欄位名稱"`
+* 2. `required=True`  是否必填項目
+* 3. `fields.Selection([('1', '必修'), ('2', '選修')], string="課程型態", required=True)`  選項以tuple()裝在list[]中。
+* 4. `default='填預設值'` 預設值，像是選項代號、呼叫今日時間給予時間選項。
 * 5. 
   
 #### 3.使用可配置精度的浮點字段 decimal precision 
