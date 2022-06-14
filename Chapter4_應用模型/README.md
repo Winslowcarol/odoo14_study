@@ -1,14 +1,16 @@
 這個章節，是一些基本較簡單的功能入門，分別有以下：
 #### 1.定義模型表現及排序 model attribution
-○ _rec_name:展示、紀錄標題
+○ _rec_name:展示、紀錄標題。沒有欄位name宣告(name_get)的時候，我們會使用`_rec_name`代表每一筆紀錄。
     
-○ _order：順序
+○ _order：順序，資料排序的準則，輸入多筆記錄，要依照哪個欄位排列？
     
 ○ _description：給用戶看的模型標題
+
+○ class 後的model name不可以重複。整個系統都不可以重複出現。
     
 #### 2.向模型添加數據字段 data field
 		
-***以下第3~5節，說明資料型態，這邊統整分三類：***
+**以下第3~5節，說明資料型態，這邊統整分三類：**
     
 ○ 基礎類型：Char, Text, Boolean, Integer, Float, Date, Datetime, Binary
 * 日後搜尋：Text效能差，Char效能好
@@ -20,12 +22,14 @@
     
 ○ 關係類型：Many2one, One2many, Many2many
 
-***field中參數：***
+**field中參數：**
 * 1. `string="欄位名稱"`
 * 2. `required=True`  是否必填項目
 * 3. `fields.Selection([('1', '必修'), ('2', '選修')], string="課程型態", required=True)`  選項以tuple()裝在list[]中。
 * 4. `default='填預設值'` 預設值，像是選項代號、呼叫今日時間給予時間選項。
-* 5. 
+* 5. `fields.Date` 日期欄位，另有Datetime可以選擇
+* 6. `_rec_name` 沒有欄位name宣告(name_get)的時候，我們會使用`_rec_name`代表每一筆紀錄。 (record representation)
+* 7. `Binary` 可以放圖片、檔案。
   
 #### 3.使用可配置精度的浮點字段 decimal precision 
     Float
