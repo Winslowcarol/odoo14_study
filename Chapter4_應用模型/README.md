@@ -8,7 +8,7 @@
     
 #### 2.向模型添加數據字段 data field
 		
-以下第3~5節，說明資料型態，這邊統整分三類：
+***以下第3~5節，說明資料型態，這邊統整分三類：***
     
 ○ 基礎類型：Char, Text, Boolean, Integer, Float, Date, Datetime, Binary
 * 日後搜尋：Text效能差，Char效能好
@@ -20,7 +20,7 @@
     
 ○ 關係類型：Many2one, One2many, Many2many
 
-field中參數：
+***field中參數：***
 * 1. `string="欄位名稱"`
 * 2. `required=True`  是否必填項目
 * 3. `fields.Selection([('1', '必修'), ('2', '選修')], string="課程型態", required=True)`  選項以tuple()裝在list[]中。
