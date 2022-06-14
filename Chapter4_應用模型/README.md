@@ -19,6 +19,13 @@
 ○ 複雜類型：Function, Selection
     
 ○ 關係類型：Many2one, One2many, Many2many
+
+field中參數：
+* 1. 'string="欄位名稱"'
+* 2. 'required=True'  是否必填項目
+* 3. 'fields.Selection([('1', '必修'), ('2', '選修')], string="課程型態", required=True)'  選項以tuple()裝在list[]中。
+* 4. 'default='填預設值'' 預設值，像是選項代號、呼叫今日時間給予時間選項。
+* 5. 
   
 #### 3.使用可配置精度的浮點字段 decimal precision 
     Float
@@ -39,4 +46,8 @@
 #### 11.使用繼承向模型添加功能 model_inheritance
 #### 12.使用繼承拷貝模型定義 copy_model
 #### 13.使用代理繼承將功能拷貝至另一個模型 inheritance_delegation
-#### 14.使用抽象模型實現可復用模型功能 abstract_models
+#### 14.使用摘要模型實現可復用模型功能 abstract_models
+常用在報表，如果我們每天都要看一次當月銷售量，這樣我們都要調出銷售紀錄，重新篩選一次資料。這時候可以寫一個 Abstract model，設定好調取公式。
+只要選項勾一勾就可以出現報表了。而且這個model不會把你調取的資料存到DB，輸出完摘要後馬上消失。只有動作寫起來，一個外掛程式的概念。
+
+* 計算時：Float（記得宣告digit）會比起 Integer精準
