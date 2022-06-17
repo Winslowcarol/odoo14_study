@@ -24,22 +24,22 @@
 # 4.新建記錄
 # 5.更新記錄集中記錄值
 # 6.搜索記錄 Searching for records
-### 前言
+## 前言
     這兒透過使用宣告domain，使用名稱(name)跟分類(cate)來找到書本(book)。
-### 步驟
-#### (1) def find_book(self):
+## 步驟
+### (1) def find_book(self):
 	function
-#### (2) domain =
+### (2) domain =
 	設定搜索域
 	補充：https://odootricks.tips/about/building-blocks/domain-in-odoo/
-#### (3) books = self.search(domain)
+### (3) books = self.search(domain)
 	search()方法也可以用search_count(domain)
-### 說明
+## 說明
 
 # 7.合併記錄集
-### 前言
-### 步驟
-### 說明
+## 前言
+## 步驟
+## 說明
 # 8.過濾記錄集
 # 9.遍歷記錄集關聯
 # 10.記錄集排序
