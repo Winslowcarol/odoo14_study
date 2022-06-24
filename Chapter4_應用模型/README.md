@@ -47,9 +47,16 @@
 #### 8.向模型添加計算字段 compute_fields
 #### 9.暴露存儲在其它模型中的關聯字段 related_fields
 #### 10.使用引用字段添加動態關聯 reference_fields
-#### 11.使用繼承向模型添加功能 model_inheritance
-#### 12.使用繼承拷貝模型定義 copy_model
-#### 13.使用代理繼承將功能拷貝至另一個模型 inheritance_delegation
+#### 11.使用繼承向模型添加功能 Adding features to a model using inheritance
+odoo中提供了三種繼承：
+	1.Class inheritance (extension):在原生模型之上擴增功能。所以是使用原生模型的DB，多加上欄位資料。 這一章節要使用的。
+	2.Prototype inheritance:拷貝原本的模型所有功能，並寫把資料寫到新的DB，不使用原生模型的DB。通常取名.copy。
+	3.Delegation inheritance:使用`_inherits`，不想要使用那麼多新的DB空間放重複的資料，但又想要再增添欄位的時候，用另一個schema紀錄新欄位，畫面呈現的時候把原本的schema跟新的schema一起抓出來呈現。就會使用這個繼承。
+	
+		
+#### 12.使用繼承拷貝模型定義 Copy model definition using inheritance (Prototype inheritance)
+
+#### 13.使用代理繼承將功能拷貝至另一個模型 Using delegation inheritance to copy features to another model (Delegation inheritance)
 #### 14.使用摘要模型實現可復用模型功能 abstract_models
 常用在報表，如果我們每天都要看一次當月銷售量，這樣我們都要調出銷售紀錄，重新篩選一次資料。這時候可以寫一個 Abstract model，設定好調取公式。
 只要選項勾一勾就可以出現報表了。而且這個model不會把你調取的資料存到DB，輸出完摘要後馬上消失。只有動作寫起來，一個外掛程式的概念。
