@@ -94,7 +94,7 @@ odoo中提供了三種繼承：
 這個章節使用Class inheritance，這邊範例使用添加功能1.關聯many2one，功能2.compute 
 ## 步驟
 ### Step1:py檔中加上model，使用`_inherit`，不用將模型命名，class抄原生的，加入兩個要添加的功能欄位。
-'''
+```
 class ResPartner(models.Model):
     _inherit = 'res.partner'
     _order = 'name'
@@ -102,16 +102,16 @@ class ResPartner(models.Model):
         'library.book', string='Authored Books')
     count_books = fields.Integer( 'Number of Authored Books',
                   compute='_compute_count_books' )
-'''
+```
 ### Step2:py檔中使用了compute記得在同個class下寫函式。
-'''
+```
 @api.depends('authored_book_ids')
 def _compute_count_books(self):
    for r in self:
       r.count_books = len(r.authored_book_ids)
-'''
+```
 ### Step3:View 也可以繼承，沒有view繼承會去抓原生的view，但因為擴增欄位了，所以我們就繼承來擴增。記得要放在__menifest__.py檔中的data。
-'''
+```
 <field name="inherit_id" ref="res.partner"/>
 
 <field name="arch" type="xml">        
@@ -122,8 +122,7 @@ def _compute_count_books(self):
       </xpath>
               
 </field>
-
-'''
+```
 ## 補充
 擴增的位置position可以選擇參數：after|before|replace|attributes|inside           
 	
@@ -132,16 +131,16 @@ def _compute_count_books(self):
 拷貝原本的模型所有功能，並寫把資料重複寫到新的DB(新的一張table)，不使用原生模型的DB。通常取名.copy。
 ## 步驟
 ### Step1:創一個library_book_copy.py
-'''
+```
 from odoo import models, fields, api
 
 class LibraryBookCopy(models.Model):
     _name = "library.book.copy"
     _inherit = "library.book"
     _description = "Library Book's Copy"
-'''
+```
 ### Step2:同上面11，記得去__init__.py 新增model，然後要view也要改。模板範例如下：
-'''
+```
 <record id="view_inherit__form" model="ir.ui.view">
 	<field name="name">view.inherit..form</field>
         <field name="model"></field>
@@ -155,7 +154,7 @@ class LibraryBookCopy(models.Model):
               
         </field>
 </record>
-'''
+```
 ## 補充
 可以打開pgadmin，看是否有無新的DB寫上一樣的功能。
 # 13.使用代理繼承將功能複製至另一個模型 Using delegation inheritance to copy features to another model (Delegation inheritance)
@@ -163,21 +162,21 @@ class LibraryBookCopy(models.Model):
 這邊比較像是節外生枝。在原生的功能及table上，創建另一個table架在原生的table上使用。這邊範例是從'res.partner'模型下取'partner_id'來用。再創一個新的table。
 ## 步驟
 ### Step1:py檔寫入。
-'''
+```
 class LibraryMember(models.Model):
     _name = 'library.member'
     _inherits = {'res.partner': 'partner_id'}
     partner_id = fields.Many2one(
         'res.partner',
         ondelete='cascade')
-'''
+```
 ### Step2:這邊增加四個欄位，產生新的table。
-'''
+```
 date_start = fields.Date('Member Since')
 date_end = fields.Date('Termination Date')
 member_number = fields.Char()
 date_of_birth = fields.Date('Date of birth')
-'''
+```
 ## 補充
 ondelete='cascade'
 # 14.使用摘要模型實現可復用模型功能 abstract_models
